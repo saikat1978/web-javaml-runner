@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Run Configurations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<h2>Run Configurations</h2>
+	<div class="container">
+		<form action="action_page.php">
+			<div class="row">
+				<div class="col-25">
+					<label for="configname">Configuration name</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="configname" name="configname"
+						placeholder="Configuration name..">
+					<!--select id="country" name="country">
+						<option value="australia">Australia</option>
+						<option value="canada">Canada</option>
+						<option value="usa">USA</option>
+					</select-->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="dirpath">Directory Path</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="dirpath" name="dirpath"
+						placeholder="Directory path..">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="cmdname">Command</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="cmdname" name="cmdname"
+						placeholder="Command to execute..">
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- <div class="col-25">
+					<label for="subject">Subject</label>
+				</div>
+				<div class="col-75">
+					<textarea id="subject" name="subject"
+						placeholder="Write something.." style="height: 200px"></textarea>
+				</div> -->
+			</div>
+			<div class="row">
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+	<p>
+	<p>
+	<table class="greenTable">
+		<thead>
+			<tr>
+				<th>Configuration name</th>
+				<th>Directory path</th>
+				<th>Command</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>cell1_1</td>
+				<td>cell2_1</td>
+				<td>cell3_1</td>
+				
+			</tr>
+			<tr>
+				<td>cell1_2</td>
+				<td>cell2_2</td>
+				<td>cell3_2</td>
+				
+			</tr>
+			<tr>
+				<td>cell1_3</td>
+				<td>cell2_3</td>
+				<td>cell3_3</td>
+				
+			</tr>
+			<tr>
+				<td>cell1_4</td>
+				<td>cell2_4</td>
+				<td>cell3_4</td>
+				
+			</tr>
+			<tr>
+				<td>cell1_5</td>
+				<td>cell2_5</td>
+				<td>cell3_5</td>
+				
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
