@@ -21,7 +21,7 @@
 		<tbody>
 			<tr>
 				<td>Run configuration for Product A</td>
-				<td>Start | Stop</td>
+				<td><a href="/sm/readLog">Start</a> | Stop</td>
 				
 			</tr>
 			<tr>
@@ -30,7 +30,12 @@
 			</tr>
 			
 		</tbody>
-		</tr>
+		
 	</table>
+	<p>
+	<h3>Log Output</h3>
+	<form>
+		<textarea rows="10" cols="30" th:text="${session.logtext}"></textarea>
+	</form>
 </body>
 </html>
