@@ -4,6 +4,22 @@
 <title>System Monitor</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" href="/css/style.css">
+<script type="text/javascript" src="/jquery-3.3.1.min.js" ></script>
+<script type="text/javascript">
+
+function refreshText() {
+	alert("1");
+    $.ajax({
+    	type:"GET",
+        url:"http://localhost:8080/sm/readLog",
+        success:function(result){
+            $("#logtxt").text(result);
+            setTimeout(refreshText, 5000);
+        }
+    });
+}
+	
+</script>
 </head>
 <body>
 	<h2>
@@ -35,7 +51,12 @@
 	<p>
 	<h3>Log Output</h3>
 	<form>
-		<textarea rows="10" cols="30" th:text="${session.logtext}"></textarea>
+		<table>
+			<tr>
+				<td><input type="button" id="btnRefresh" value="Refresh" onclick="refreshText()"></td>
+			</tr>
+		</table>
+		<textarea id="logtxt" rows="10" cols="30" th:text="${session.logtext}"></textarea>
 	</form>
 </body>
 </html>

@@ -2,9 +2,12 @@ package com.wdc.base.controller;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,9 +31,10 @@ public class SysMonController {
 	}
 
 	@GetMapping(path = "/sm/readLog")
-	public String readLog(Model model, HttpSession session) {
-		String logfile = "F:\\input1.txt";
-		String errfile = "F:\\err1.txt";
+	public void readLog(Model model, HttpSession session, HttpServletResponse response) {
+		logger.info("inside readLog");
+		String logfile = "./output1.txt";
+		String errfile = "./err1.txt";
 		StringBuilder builder = new StringBuilder();
 		
 		File logF = new File(logfile);
@@ -49,14 +53,22 @@ public class SysMonController {
 			}
 			scanner.close(); 
 			
-			session.setAttribute("logtext", builder.toString());			
-		} catch (FileNotFoundException e) {
+			session.setAttribute("logtext", builder.toString());
+			
+			response.setContentType("");
+			PrintWriter writer = response.getWriter(); 
+			writer.print(builder.toString());
+			writer.flush();
+			writer.close();
+			
+			
+		} catch (IOException e) {
 			
 			e.printStackTrace();
 			builder.append("log files not generated. Please check the application error log.");
-			return "sysmon";
+			
 		}
-		return "redirect:/sm/landing";
+		
 	}
 	
 	@GetMapping(path = "/sm/startService")
