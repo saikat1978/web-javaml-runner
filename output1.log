@@ -1,0 +1,37 @@
+@@@ Checking product integrity: TRESXLB2
+### Using version(s): V1.180119
+@@@ Product List:
+{TRESXLB2=[V1.180119]}
+@@@ Limit Rule List:
+{TRESXLB2:V1.180119=./programs/TRESXLB2/V1.180119/settings/Limit_rule.csv}
+@@@ Model Rule List:
+{TRESXLB2:V1.180119:Champion=./programs/TRESXLB2/V1.180119/settings/Champion.model_rule.csv, TRESXLB2:V1.180119:Challenger=./programs/TRESXLB2/V1.180119/settings/Challenger.model_rule.csv}
+@@@ Model Config List:
+{TRESXLB2:V1.180119:Champion:XPET_FAILURE=./programs/TRESXLB2/V1.180119/settings/Champion.XPET_FAILURE.csv, TRESXLB2:V1.180119:Champion:XPET_DEFECT=./programs/TRESXLB2/V1.180119/settings/Champion.XPET_DEFECT.csv, TRESXLB2:V1.180119:Champion:OQA_FAILURE=./programs/TRESXLB2/V1.180119/settings/Champion.OQA_FAILURE.csv, TRESXLB2:V1.180119:Challenger:XPET_FAILURE=./programs/TRESXLB2/V1.180119/settings/Challenger.XPET_FAILURE.csv, TRESXLB2:V1.180119:Challenger:XPET_DEFECT=./programs/TRESXLB2/V1.180119/settings/Challenger.XPET_DEFECT.csv, TRESXLB2:V1.180119:Challenger:OQA_FAILURE=./programs/TRESXLB2/V1.180119/settings/Challenger.OQA_FAILURE.csv}
+@@@ Model File List:
+{TRESXLB2:V1.180119:Champion:XPET_FAILURE=./programs/TRESXLB2/V1.180119/models/Champion.XPET_FAILURE.model, TRESXLB2:V1.180119:Champion:XPET_DEFECT=./programs/TRESXLB2/V1.180119/models/Champion.XPET_DEFECT.model, TRESXLB2:V1.180119:Champion:OQA_FAILURE=./programs/TRESXLB2/V1.180119/models/Champion.OQA_FAILURE.model, TRESXLB2:V1.180119:Challenger:XPET_FAILURE=./programs/TRESXLB2/V1.180119/models/Challenger.XPET_FAILURE.model, TRESXLB2:V1.180119:Challenger:XPET_DEFECT=./programs/TRESXLB2/V1.180119/models/Challenger.XPET_DEFECT.model, TRESXLB2:V1.180119:Challenger:OQA_FAILURE=./programs/TRESXLB2/V1.180119/models/Challenger.OQA_FAILURE.model}
+@@@ Loading models 
+@@@ Loading 1 copies of ./programs/TRESXLB2/V1.180119/settings/Champion.XPET_FAILURE.csv
+@@@ Loading 1 copies of ./programs/TRESXLB2/V1.180119/settings/Champion.XPET_DEFECT.csv
+@@@ Loading 1 copies of ./programs/TRESXLB2/V1.180119/settings/Champion.OQA_FAILURE.csv
+@@@ Loading 1 copies of ./programs/TRESXLB2/V1.180119/settings/Challenger.XPET_FAILURE.csv
+@@@ Loading 1 copies of ./programs/TRESXLB2/V1.180119/settings/Challenger.XPET_DEFECT.csv
+@@@ Loading 1 copies of ./programs/TRESXLB2/V1.180119/settings/Challenger.OQA_FAILURE.csv
+@@@ Loading model rules 
+Loading rule: TRESXLB2:V1.180119:Champion
+{1000=X0.D1.Q1.L1, 1011=X0.D1.Q0.L0, 1110=X0.D0.Q0.L1, 0010=X1.D1.Q0.L1, 1010=X0.D1.Q0.L1, 0101=X1.D0.Q1.L0, 0000=X1.D1.Q1.L1, 0011=X1.D1.Q0.L0, 0110=X1.D0.Q0.L1, 1101=X0.D0.Q1.L0, 0001=X1.D1.Q1.L0, 0100=X1.D0.Q1.L1, 0111=X1.D0.Q0.L0, 1001=X0.D1.Q1.L0, 1100=X0.D0.Q1.L1, 1111=X0.D0.Q0.L0}
+Loading rule: TRESXLB2:V1.180119:Challenger
+{1000=X0.D1.Q1.L1, 1011=X0.D1.Q0.L0, 1110=X0.D0.Q0.L1, 0010=X1.D1.Q0.L1, 1010=X0.D1.Q0.L1, 0101=X1.D0.Q1.L0, 0000=X1.D1.Q1.L1, 0011=X1.D1.Q0.L0, 0110=X1.D0.Q0.L1, 1101=X0.D0.Q1.L0, 0001=X1.D1.Q1.L0, 0100=X1.D0.Q1.L1, 0111=X1.D0.Q0.L0, 1001=X0.D1.Q1.L0, 1100=X0.D0.Q1.L1, 1111=X0.D0.Q0.L0}
+@@@ Loading Limit rules 
+Loading Limit rule: TRESXLB2:V1.180119
+@@@ Service Ready!
+@@@ NumAlive Minions: 1
+@@@ Scorer Stock: 
+	TRESXLB2:V1.180119:Champion:XPET_DEFECT: 1
+	TRESXLB2:V1.180119:Challenger:XPET_DEFECT: 1
+	TRESXLB2:V1.180119:Challenger:XPET_FAILURE: 1
+	TRESXLB2:V1.180119:Challenger:OQA_FAILURE: 1
+	TRESXLB2:V1.180119:Champion:XPET_FAILURE: 1
+	TRESXLB2:V1.180119:Champion:OQA_FAILURE: 1
+$$$ Minion 1 received: STATUS
+RUNNING=1 products:{TRESXLB2=[V1.180119]}
