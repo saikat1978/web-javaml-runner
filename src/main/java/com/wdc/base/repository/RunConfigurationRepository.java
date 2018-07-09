@@ -6,4 +6,6 @@ import com.wdc.base.repository.entity.RunConfiguration;
 
 public interface RunConfigurationRepository extends JpaRepository<RunConfiguration, Integer> {
 
+	//RunConfiguration findByCommand(String string);
+
 }

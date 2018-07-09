@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "run_config", schema = "javaml")
+@Table(name = "run_config")
 public class RunConfiguration {
 
 	@Id
